@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  background-color: #212123;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+ max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*---------------side navigation -----------------*/
+
+.sideNav {
+  width: 220px;
+  background-color: #11100e;
+}
+
+/*----------------main page ----------------------*/
+
+.mainPage {
+  flex: 1;
+  padding: 20px;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*-----header-----*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.search {
+  position: relative;
+}
+
+.searchInput {
+  background-color: #3a3a3b;
+  padding: 10px 10px 10px 40px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 16px;
+}
+
+.notices {
+  margin-right: 10px;
+}
+
+.bellIcon {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*----- common styles for boxes -----*/
+.box {
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+/*-----top-box -----*/
+.posterContent {
+  padding: 30px 20px 30px 60px;
+  margin-top: 20px;
+  background-color: #28282a;
+}
+
+.checked {
+  color: orange;
+}
+
+.posterHeadings {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.posterHOne {
+  font-size: 40px;
+}
+
+.posterHTwo {
+  color: #616167;
+}
+
+.hrPosterTag {
+  width: 6%;
+  margin-left: 0;
+}
+
+.smallPara {
+  line-height: 22px;
+}
+
+.posterBtn {
+  padding: 15px 25px;
+}
+
+.orderBtn {
+  margin-right: 10px;
+}
+/*-----second box -----*/
+
+.productsFlex {
+  display:flex;
+  flex-wrap: wrap;
+
+
+}
+
+.flexItem {
+  background-color: #28282a;
+  text-align: center;
+  padding: 0 10px 20px 10px;
+  border-radius: 4px;
+  margin: 10px 15px 20px 0;
+}
+
+.addBtn {
+  background-color: transparent;
+  border: 2px solid #8753bb;
+  border-radius: 50%;
+  padding: 12px 8px;
+  margin-right: 5px;
+}
+
+.productImg {
+  margin-top: -40px;
+  width: 300px;
+}
+
+.productType {
+  color: #616167;
+}
+
+.productPrice {
+  color: #8753bb;
+  font-weight: bold;
+}
+
+/*-----third box -----*/
+
+.objectsFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.objectItem {
+  height: 300px;
+  width: 645px;
+  border: 2px solid #616167;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.objectItemOne {
+  margin-right: 40px;
+}
+
+/*-----fourth box -----*/
+
+.gamesFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gameBlock {
+  margin: 0 15px;
+}
+
+.arrowBtn {
+  padding: 18px 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.gamesItem {
+  max-width: 300px;
+  max-height: 350px;
+  border-radius: 4px;
+}
+
+.gameText {
+  padding: 10px;
+  margin-right: 25px;
+}
+
+.gameHeading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.subheading {
+  margin: 10px 0;
+}
+
+.gamePara {
+  color: #616167;
+  margin: 5px 0;
+}
+
+.gameBtn {
+  padding: 5px 12px;
+  border-radius: 50%;
+}
+
+/*----- row boxes -----*/
+.rowBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.rowTitles {
+  margin: 0 10px 0 0;
+}
+
+.leftSec {
+  display: flex;
+  align-items: center;
+}
+
+.rowBtn {
+  min-width: 80px;
+  margin: 0 5px;
+}
+
+.topBtn {
+  padding: 8px 20px;
+}
+
+.popularBtn,
+.soldBtn {
+  padding: 8px 25px;
+}
+
+/*-----common button for styles -----*/
+button {
+  color: white;
+  background-color: #8753bb;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+}
+button:hover {
+  cursor: pointer;
+}
+
+
+
+/*!*-----media queries-----*!*/
+
+/*@media only screen and (max-width: 375px) {*/
+/*  header {*/
+/*    justify-content: flex-start;*/
+/*  }*/
+
+/*  .notices {*/
+/*    padding-top: 10px;*/
+/*  }*/
+
+/*  .bellIcon {*/
+/*    margin-left: 2px;*/
+/*    margin-right: 2px;*/
+/*  }*/
+
+/*  .searchInput {*/
+/*    width: 200px;*/
+/*  }*/
+/*  .productsGrid {*/
+/*    grid-template-columns: 340px;*/
+/*    grid-template-rows: repeat(8, 330px);*/
+/*  }*/
+
+/*  .objectsGrid {*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: repeat(2, 1fr);*/
+/*  }*/
+
+/*  .objectItem {*/
+/*    height: 340px;*/
+/*    width: 340px;*/
+/*  }*/
+
+/*  .gamesGrid {*/
+/*    grid-template-columns: 1fr;*/
+/*    grid-template-rows: repeat(5, 1fr);*/
+/*  }*/
+
+/*  .gamesItem {*/
+/*    width: 330px;*/
+/*  }*/
+/*}*/
